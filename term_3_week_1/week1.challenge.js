@@ -209,3 +209,334 @@
 // } 
 
 // continueWhenSmall(obj);
+
+// const string = "ooootttt"
+// let oCount = 0;
+// let tCount = 0;
+
+// for(let i = 0; i < string.length; i++){
+    
+//     if(string.charAt(i) === 'o'){
+//         oCount ++;
+//     } else if(string.charAt(i) === 't'){
+//         tCount ++;
+//     }
+// }
+
+// console.log(oCount)
+// console.log(tCount)
+// console.log(oCount == tCount);
+
+// const exesAndOhs = (string) => {
+// 	// Your code here
+// 	string.toLowerCase();
+
+// 	let oCount = 0;
+// 	let xCount = 0;
+
+// 	for(let i = 0; i < string.length; i++){
+    
+// 		if(string.charAt(i) === 'x'){
+// 			oCount ++;
+// 		} else if(string.charAt(i) === 't'){
+// 			xCount ++;
+// 		}
+// 	}
+
+// 	return(oCount === xCount);
+
+// }
+
+// const string = "xxxooo";
+
+// // const exesAndOhs = (string) => {
+
+// function exesAndOhs(string) {
+// 	// Your code here
+// 	string.toLowerCase();
+
+// 	let oCount = 0;
+// 	let xCount = 0;
+
+// 	for(let i = 0; i < string.length; i++){
+    
+// 		if(string.charAt(i) === 'x'){
+// 			oCount ++;
+// 		} 
+// 		if(string.charAt(i) === 't'){
+// 			xCount ++;
+// 		}
+// 	}
+
+// 	console.log(oCount === xCount);
+
+// }
+
+// exesAndOhs(string)
+
+
+// function x(string) {
+// 	// Your code here
+// 	// loop through string 
+// 	// Capitalise the first letter on the string
+// 	// add toLowerCase() to the other letters of the string
+
+// 	// let firstLetter = [];
+// 	// let otherLetters = [];
+
+// 	// const newString = [];
+// 	// string = string.toLowerCase().split(" ").map(word => word[0].toUpperCase().concat(word.slice(1)))
+	
+// 	// console.log(string.join(" "))
+	
+
+// 	// step 1. Check if the string contains only one array
+// 	// if(string.split(" ").length === 1){
+// 	// 	string = string.toLowerCase()
+// 	// 	const firstLetter = string.charAt(0).toUpperCase()
+// 	// 	console.log(firstLetter + string.slice(1))
+// 	// }
+
+// 	// step 2. make all letters lowercase form 
+// 	// step 3. split each word into seperate arrays of string
+// 	string = string.toLowerCase().split(" ")
+	
+// 	// step 4. map through arrays uppercasing the first letter 
+// 	for(let i = 0; i < string.length - 1; i++){
+// 		// string = string.toLowerCase().split(" ")
+
+// 		if(string.split(" ").length === 1){
+			
+// 			string = string.toLowerCase()
+// 			const firstLetter = string.charAt(0).toUpperCase()
+// 			console.log(firstLetter + string.slice(1))
+
+// 		}
+
+// 		const newStr = string.map(word => word[0].toUpperCase() + word.substring(1))
+// 		console.log(newStr.join(" "))
+// 	}
+
+// 	// console.log(string)
+	
+	
+
+// }
+
+
+// // x("hello world")
+// x("HELLO")
+
+
+// function narcissisticNumber(number) {
+// 	// you code here
+
+// 	num = 0;
+
+// 	// compare number to 
+
+// 	// Last digit of number to the power of all numbers
+// 	const numStr = number.toString()
+// 	const lastDigit = numStr[numStr.length -1]
+	
+// 	for(let i = 0; i < numStr.length; i++){
+// 		num += numStr[i] ** lastDigit
+// 		// console.log(num) 
+// 	}
+
+// 	// console.log(num) 
+// 	console.log(num === number)
+// 	// num = lastDigit * numStr[numStr.length -2]
+// 	// pass total of the power of all numbers to num variable 
+
+// 	// console.log(lastDigit)
+// 	// console.log(num)
+// }	
+
+// // narcissisticNumber(153)
+// narcissisticNumber(1634)
+
+// console.log(narcissisticNumber(12))
+// console.log(narcissisticNumber(123))
+// console.log(narcissisticNumber(153))
+// console.log(narcissisticNumber(1634))
+
+
+
+// function sayHi(name) {
+//     console.log("hi", name)
+// }
+
+// function greet(name, callback){
+//     callback(name)
+// }
+
+// greet('Emma', sayHi)
+
+// callback is a plcaeholder for the function being called back 
+
+// let value = "hello";
+
+// function capitalise(value) {
+// 	// value = 
+// 	console.log(value.map(word => word[0].toUpperCase() + word.substring(1)).join(' '))
+// }
+
+// function retrieveNum(value, callback){
+// 	callback(value)
+// }
+
+// retrieveNum(["hello", "bye"], capitalise)
+
+// const newStr = string.map(word => word[0].toUpperCase() + word.substring(1))
+
+
+// function isNumber(value) {
+
+// 	// if(value.filter(num => typeof(num) === 'number')){
+// 	// 	console.log(value)
+// 	// }
+// 	// console.log(false)
+
+// 	// value.forEach((num) => {
+// 	// 	if(typeof(num) === 'number'){
+// 	// 		console.log(num)
+// 	// 	}
+// 	// })
+
+// 	// console.log(value.filter(num => typeof(num) === 'number'))
+
+// 	// if(value.filter(num => typeof(num) === 'number')){
+// 	// 	// console.log(true)
+// 	// 	console.log(value)
+// 	// } else {
+// 	// 	console.log(false)
+// 	// }
+
+// 	// if(value.filter(num => typeof(num) === 'number'))
+
+// 	const newValue = value.filter(num => typeof(num) === 'number')
+
+// 	if(value.filter(num => typeof num === 'number')){
+// 		console.log(newValue);
+// 		return(true)
+// 	}
+// 	return(false)
+	
+// }
+
+// function getTheNumbers(list, callback) {
+// 	callback(list)
+	
+// }
+
+// // isNumber([1])
+// getTheNumbers(["hello", "bye", 1, 4, "today", 500], isNumber)
+
+
+// function shortToLong(val1, val2) {
+// 	let newArr = []
+// 	newArr.push(val1, val2)
+
+// 	console.log(newArr.toString().sort())
+// }
+
+// shortToLong(10, 20)
+
+// function shortestToLongest(val1, val2, callback) {
+// 	callback(val1, val2)
+// }
+
+// shortestToLongest([1,4,0], shortToLong)
+
+
+// Write a function that will take a string as an argument. The method will check this string, and count the amount of 'x's and 'o's. It should return true if the amount of 'x's and 'o's are the same, and should return false if they are different. It should also be case insensitive
+
+
+// function exesAndOhs(string){
+
+// 	// It should also be case insensitive
+// 	string = string.toLowerCase()
+
+// 	// count the amount of 'x's and 'o's.
+// 	let xCount = [];
+// 	let oCount = [];
+
+// 	//The method will check this string, and count the amount of 'x's and 'o's.
+// 	for(let i = 0; i < string.length; i++){
+
+// 		if(string.charAt(i) === 'x'){
+// 			xCount.push(string.charAt(i))
+// 		}
+// 		if(string.charAt(i) === 'o'){
+// 			oCount.push(string.charAt(i))
+// 		}
+// 	}
+// 	console.log(`This is x count: ${xCount.length}`)
+// 	console.log(`This is o count: ${oCount.length}`)
+
+// 	console.log(xCount.length === oCount.length)
+
+	
+// }
+
+
+// exesAndOhs("xxxooo")
+
+
+
+
+
+
+
+// Callback functions for filter or find are used to filter values from an iterable collection that meet some criteria. Therefore they test some condition for each value in an iterable collection, and return true or false.  You will implement the isNumber function to use with filter to get all numbers from a collection.
+
+
+// isNumber 
+// Return true if value has a number data type
+// function isNumber(value) {
+	
+// 	if(typeof(value) === 'number'){
+// 		return(true)
+// 	}
+
+// }
+
+// // getTheNumbers
+// //   Parameter: list
+// //      An array of different kinds of data (numbers, strings, etc)
+// //   Returns an array that only contains the numbers from list
+// // Use filter and isNumber to return all the numbers in list
+// function getTheNumbers(list, callback) {	
+// 	const newVar = list.filter(num => isNumber(num) === true)
+// 	console.log(newVar)
+// }
+
+// getTheNumbers([10, 20, "hello", 50, "John", 20, "are you sure?"], isNumber)
+
+
+function capitalise(value) {
+	// return(value.map(word => word[0].toUpperCase() + word.substring(1)).join(' '))
+
+	return(value[0].toUpperCase())
+	// return(value.capitalise() + value.substring(1))
+}
+
+
+function capitaliseFirst(strings, callback) {
+	// console.log(callback(strings))
+	// console.log(callback(strings.map(word => word[0].toUpperCase() + word.substring(1)).join(' ')))
+
+	let arr = []
+	strings.forEach(string => {
+		arr.push(strings)
+	})
+	
+	console.log(arr)
+	console.log(arr.map(word => callback(word)))
+}
+
+
+capitaliseFirst(["hello", "bye", "chow"], capitalise)
+// capitaliseFirst("hello", capitalise)
+console.log(capitaliseFirst(["this is the first.", "this is second.", "finally the last one."]))

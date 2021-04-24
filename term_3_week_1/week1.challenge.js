@@ -515,28 +515,87 @@
 // getTheNumbers([10, 20, "hello", 50, "John", 20, "are you sure?"], isNumber)
 
 
-function capitalise(value) {
-	// return(value.map(word => word[0].toUpperCase() + word.substring(1)).join(' '))
+// function capitalise(value) {
+// 	// return(value.map(word => word[0].toUpperCase() + word.substring(1)).join(' '))
 
-	return(value[0].toUpperCase())
-	// return(value.capitalise() + value.substring(1))
-}
+// 	return(value[0].toUpperCase())
+// 	// return(value.capitalise() + value.substring(1))
+// }
 
 
-function capitaliseFirst(strings, callback) {
-	// console.log(callback(strings))
-	// console.log(callback(strings.map(word => word[0].toUpperCase() + word.substring(1)).join(' ')))
+// function capitaliseFirst(strings, callback) {
+// 	// console.log(callback(strings))
+// 	// console.log(callback(strings.map(word => word[0].toUpperCase() + word.substring(1)).join(' ')))
 
-	let arr = []
-	strings.forEach(string => {
-		arr.push(strings)
-	})
+// 	let arr = []
+// 	strings.forEach(string => {
+// 		arr.push(strings)
+// 	})
 	
-	console.log(arr)
-	console.log(arr.map(word => callback(word)))
-}
+// 	console.log(arr)
+// 	console.log(arr.map(word => callback(word)))
+// }
 
 
-capitaliseFirst(["hello", "bye", "chow"], capitalise)
-// capitaliseFirst("hello", capitalise)
-console.log(capitaliseFirst(["this is the first.", "this is second.", "finally the last one."]))
+// capitaliseFirst(["hello", "bye", "chow"], capitalise)
+// // capitaliseFirst("hello", capitalise)
+// console.log(capitaliseFirst(["this is the first.", "this is second.", "finally the last one."]))
+
+// function commonCharacters(string1, string2) {
+// 	string1 = string1.toLowerCase()
+// 	string2 = string1.toLowerCase()
+
+// 	if(string1 === ''|| string2 === '') {
+// 		console.log('')
+// 	}
+
+// 	let arr1 = [];
+// 	let arr2 = [];
+// 	let arr3 = [];
+// 	// loop through string1
+// 	for(let i = 0; i <= string1.length - 1; i++){
+// 		arr1.push(string1.charAt(i))
+// 		// console.log(arr1)
+// 	}
+// 	// loop through string2
+// 	for(let i = 0; i <= string2.length - 1; i++){
+// 		arr2.push(string2.charAt(i))
+// 		// console.log(arr2)
+// 	}
+
+// 	for(let i = 0; i <= arr2.length - 1; i++) {
+// 		arr1.forEach((letter) => {
+// 			if(arr2[i] === letter){
+// 				arr3.push(letter)
+// 			}
+// 		})
+// 	}
+	
+// 	console.log(arr3.join(''))
+
+// }
+
+// commonCharacters("abc", 'abc')
+
+
+// function commonCharacters(string1, string2) {
+// 	let arr = []
+// 	let count = string1.length > string2.length? string1.length -1 : string2.length -1
+
+// 	for(let i = 0; i <= count; i++){
+// 		string1 = string1.toLowerCase()
+// 		string2 = string2.toLowerCase()
+
+// 		if(string2.includes(string1[i]) && !arr.includes(string1[i])){
+// 			arr.push(string1[i])
+// 		}
+// 	}
+	
+// 	arr = arr.map(letter => letter.trim()).join('')
+// 	console.log(arr)
+
+// }
+
+// commonCharacters("Riding on a buffalo makes me more approachable", "so what") // ==>
+// commonCharacters("What is love?", "Baby don't hurt me") //('hatoe') 
+// commonCharacters("so what", "Riding on a buffalo makes me more approachable")
